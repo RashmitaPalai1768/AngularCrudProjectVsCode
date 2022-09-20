@@ -1,0 +1,30 @@
+
+<div class="container">
+  Name : <select name="" id="">
+    <option *ngFor="let cc of userList" value="{{cc.id}}">{{cc.name}}</option>
+  </select>
+</div>
+<br>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#sl</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone No</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let uu of userList ; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{uu.name}}</td>
+        <td>{{uu.email}}</td>
+        <td>{{uu.mobile}}</td>
+        <td>
+          <button class="btn btn-info" (click)="updateUser(uu.id)">Update</button>
+          <button class="btn btn-danger" (click)="deleteUser(uu.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 style="color: red;">User Registration </h1>
+    <form (ngSubmit)="getData()">
+      <!-- <div class="form-group">
+        <label for="exampleInputEmail1">UserId</label>
+        <input type="number" class="form-control" id="userid" name="id"  placeholder="Enter id" [(ngModel)]="user.id">
+       </div> -->
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" id="name" name="name"  placeholder="Enter Name" [(ngModel)]="user.name">
+       </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="text" class="form-control" id="email" name="email"  placeholder="Enter email" [(ngModel)]="user.email">
+       </div>
+      <div class="form-group">
+            <label for="exampleInputEmail1">PhNo</label>
+            <input type="text" class="form-control" id="mobile" name="mobile"  placeholder="Enter mobile No" [(ngModel)]="user.mobile">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" [(ngModel)]="user.password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
